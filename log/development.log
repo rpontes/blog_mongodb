@@ -1,0 +1,1743 @@
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1}).limit(-1)
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1}).limit(-1)
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1}).limit(-1)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Mon Oct 24 20:35:14 -0200 2011
+Served asset /rails.png - 200 OK (28ms)
+
+
+Started GET "/articles" for 127.0.0.1 at Mon Oct 24 20:35:45 -0200 2011
+  Processing by ArticlesController#index as HTML
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['$cmd'].find(#<BSON::OrderedHash:0x586f33a {"create"=>"articles"}>).limit(-1)
+MONGODB blog_mongodb_development['articles'].find({})
+Rendered articles/index.html.erb within layouts/application (435.3ms)
+Compiled application.css  (29ms)  (pid 4951)
+Compiled articles.css  (12ms)  (pid 4951)
+Compiled scaffolds.css  (170ms)  (pid 4951)
+Compiled application.js  (16ms)  (pid 4951)
+Compiled jquery.js  (9ms)  (pid 4951)
+Compiled jquery_ujs.js  (1ms)  (pid 4951)
+Compiled articles.js  (356ms)  (pid 4951)
+Completed 200 OK in 1152ms (Views: 1150.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Oct 24 20:35:47 -0200 2011
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Oct 24 20:35:47 -0200 2011
+Served asset /articles.css - 200 OK (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Oct 24 20:35:47 -0200 2011
+Served asset /scaffolds.css - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Oct 24 20:35:47 -0200 2011
+Served asset /jquery.js - 200 OK (14ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Oct 24 20:35:47 -0200 2011
+Served asset /articles.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Oct 24 20:35:47 -0200 2011
+Served asset /jquery_ujs.js - 200 OK (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Oct 24 20:35:47 -0200 2011
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at Mon Oct 24 20:36:08 -0200 2011
+  Processing by ArticlesController#new as HTML
+Rendered articles/_form.html.erb (11.0ms)
+Rendered articles/new.html.erb within layouts/application (27.5ms)
+Completed 200 OK in 78ms (Views: 75.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at Mon Oct 24 20:36:15 -0200 2011
+  Processing by ArticlesController#create as HTML
+  Parameters: {"article"=>{"name"=>"Teste", "content"=>"Testando"}, "commit"=>"Create Article", "authenticity_token"=>"blwjVAfkcVkc7vFdZyFPwY9eiExxWTavTRgTfUSZkHk=", "utf8"=>"✓"}
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+Redirected to http://0.0.0.0:3000/articles/4ea5e85f99b1981357000002
+Completed 302 Found in 5ms
+
+
+Started GET "/articles/4ea5e85f99b1981357000002" for 127.0.0.1 at Mon Oct 24 20:36:15 -0200 2011
+  Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4ea5e85f99b1981357000002"}
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({:_id=>BSON::ObjectId('4ea5e85f99b1981357000002')}).limit(-1).sort(_idasc)
+Rendered articles/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 40ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Oct 24 20:36:15 -0200 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Oct 24 20:36:15 -0200 2011
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Oct 24 20:36:15 -0200 2011
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Oct 24 20:36:15 -0200 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Oct 24 20:36:15 -0200 2011
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/articles/4ea5e85f99b1981357000002" for 127.0.0.1 at Mon Oct 24 20:38:54 -0200 2011
+  Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4ea5e85f99b1981357000002"}
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({:_id=>BSON::ObjectId('4ea5e85f99b1981357000002')}).limit(-1).sort(_idasc)
+Rendered articles/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 23ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Oct 24 20:38:55 -0200 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Oct 24 20:38:55 -0200 2011
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Oct 24 20:38:55 -0200 2011
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Oct 24 20:38:55 -0200 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Oct 24 20:38:55 -0200 2011
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Oct 24 20:38:55 -0200 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Oct 24 20:38:55 -0200 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/articles/4ea5e85f99b1981357000002/edit" for 127.0.0.1 at Mon Oct 24 20:38:56 -0200 2011
+  Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"4ea5e85f99b1981357000002"}
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({:_id=>BSON::ObjectId('4ea5e85f99b1981357000002')}).limit(-1).sort(_idasc)
+Rendered articles/_form.html.erb (11.5ms)
+Rendered articles/edit.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 34ms (Views: 30.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Oct 24 20:38:57 -0200 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Oct 24 20:38:57 -0200 2011
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Oct 24 20:38:57 -0200 2011
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Oct 24 20:38:57 -0200 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Oct 24 20:38:57 -0200 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Oct 24 20:38:57 -0200 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Oct 24 20:38:57 -0200 2011
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started PUT "/articles/4ea5e85f99b1981357000002" for 127.0.0.1 at Mon Oct 24 20:38:59 -0200 2011
+  Processing by ArticlesController#update as HTML
+  Parameters: {"article"=>{"name"=>"Teste", "published_on(1i)"=>"2011", "published_on(2i)"=>"10", "published_on(3i)"=>"24", "content"=>"Testando"}, "commit"=>"Update Article", "authenticity_token"=>"blwjVAfkcVkc7vFdZyFPwY9eiExxWTavTRgTfUSZkHk=", "utf8"=>"✓", "id"=>"4ea5e85f99b1981357000002"}
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({:_id=>BSON::ObjectId('4ea5e85f99b1981357000002')}).limit(-1).sort(_idasc)
+Redirected to http://0.0.0.0:3000/articles/4ea5e85f99b1981357000002
+Completed 302 Found in 7ms
+
+
+Started GET "/articles/4ea5e85f99b1981357000002" for 127.0.0.1 at Mon Oct 24 20:38:59 -0200 2011
+  Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4ea5e85f99b1981357000002"}
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({:_id=>BSON::ObjectId('4ea5e85f99b1981357000002')}).limit(-1).sort(_idasc)
+Rendered articles/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 24ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Oct 24 20:39:00 -0200 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Oct 24 20:39:00 -0200 2011
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Oct 24 20:39:00 -0200 2011
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Oct 24 20:39:00 -0200 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Oct 24 20:39:00 -0200 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Oct 24 20:39:00 -0200 2011
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Oct 24 20:39:00 -0200 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/articles/4ea5e85f99b1981357000002/edit" for 127.0.0.1 at Mon Oct 24 20:39:02 -0200 2011
+  Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"4ea5e85f99b1981357000002"}
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({:_id=>BSON::ObjectId('4ea5e85f99b1981357000002')}).limit(-1).sort(_idasc)
+Rendered articles/_form.html.erb (8.3ms)
+Rendered articles/edit.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 159ms (Views: 152.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Oct 24 20:39:02 -0200 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Oct 24 20:39:02 -0200 2011
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Oct 24 20:39:02 -0200 2011
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Oct 24 20:39:02 -0200 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Oct 24 20:39:02 -0200 2011
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Oct 24 20:39:02 -0200 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Oct 24 20:39:02 -0200 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started PUT "/articles/4ea5e85f99b1981357000002" for 127.0.0.1 at Mon Oct 24 20:39:07 -0200 2011
+  Processing by ArticlesController#update as HTML
+  Parameters: {"article"=>{"name"=>"Teste", "published_on(1i)"=>"2011", "published_on(2i)"=>"10", "published_on(3i)"=>"22", "content"=>"Testando"}, "commit"=>"Update Article", "authenticity_token"=>"blwjVAfkcVkc7vFdZyFPwY9eiExxWTavTRgTfUSZkHk=", "utf8"=>"✓", "id"=>"4ea5e85f99b1981357000002"}
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({:_id=>BSON::ObjectId('4ea5e85f99b1981357000002')}).limit(-1).sort(_idasc)
+Redirected to http://0.0.0.0:3000/articles/4ea5e85f99b1981357000002
+Completed 302 Found in 6ms
+
+
+Started GET "/articles/4ea5e85f99b1981357000002" for 127.0.0.1 at Mon Oct 24 20:39:07 -0200 2011
+  Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4ea5e85f99b1981357000002"}
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({:_id=>BSON::ObjectId('4ea5e85f99b1981357000002')}).limit(-1).sort(_idasc)
+Rendered articles/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 21ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Oct 24 20:39:07 -0200 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Oct 24 20:39:07 -0200 2011
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Oct 24 20:39:07 -0200 2011
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Oct 24 20:39:07 -0200 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Oct 24 20:39:07 -0200 2011
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Oct 24 20:39:07 -0200 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Oct 24 20:39:07 -0200 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/articles/4ea5e85f99b1981357000002" for 127.0.0.1 at Mon Oct 24 20:39:20 -0200 2011
+  Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4ea5e85f99b1981357000002"}
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({:_id=>BSON::ObjectId('4ea5e85f99b1981357000002')}).limit(-1).sort(_idasc)
+Rendered articles/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 53ms (Views: 44.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Oct 24 20:39:20 -0200 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Oct 24 20:39:20 -0200 2011
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Oct 24 20:39:20 -0200 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Oct 24 20:39:20 -0200 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Oct 24 20:39:20 -0200 2011
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Oct 24 20:39:20 -0200 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Oct 24 20:39:20 -0200 2011
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/articles/4ea5e85f99b1981357000002" for 127.0.0.1 at Mon Oct 24 20:39:21 -0200 2011
+  Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4ea5e85f99b1981357000002"}
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({:_id=>BSON::ObjectId('4ea5e85f99b1981357000002')}).limit(-1).sort(_idasc)
+Rendered articles/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 35ms (Views: 28.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Oct 24 20:39:22 -0200 2011
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Oct 24 20:39:22 -0200 2011
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Oct 24 20:39:22 -0200 2011
+Served asset /articles.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Oct 24 20:39:22 -0200 2011
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Oct 24 20:39:22 -0200 2011
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Oct 24 20:39:22 -0200 2011
+Served asset /articles.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Oct 24 20:39:22 -0200 2011
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at Mon Oct 24 20:39:53 -0200 2011
+  Processing by ArticlesController#index as HTML
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({})
+Rendered articles/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 23ms (Views: 22.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at Mon Oct 24 20:39:56 -0200 2011
+  Processing by ArticlesController#new as HTML
+Rendered articles/_form.html.erb (7.8ms)
+Rendered articles/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 26ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at Mon Oct 24 20:40:05 -0200 2011
+  Processing by ArticlesController#create as HTML
+  Parameters: {"article"=>{"name"=>"Teste 2", "published_on(1i)"=>"2011", "published_on(2i)"=>"10", "published_on(3i)"=>"24", "content"=>"Testando"}, "commit"=>"Create Article", "authenticity_token"=>"blwjVAfkcVkc7vFdZyFPwY9eiExxWTavTRgTfUSZkHk=", "utf8"=>"✓"}
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+Redirected to http://0.0.0.0:3000/articles/4ea5e94599b1981357000004
+Completed 302 Found in 5ms
+
+
+Started GET "/articles/4ea5e94599b1981357000004" for 127.0.0.1 at Mon Oct 24 20:40:05 -0200 2011
+  Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4ea5e94599b1981357000004"}
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({:_id=>BSON::ObjectId('4ea5e94599b1981357000004')}).limit(-1).sort(_idasc)
+Rendered articles/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 21ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/4ea5e94599b1981357000004" for 127.0.0.1 at Mon Oct 24 20:42:45 -0200 2011
+  Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4ea5e94599b1981357000004"}
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({:_id=>BSON::ObjectId('4ea5e94599b1981357000004')}).limit(-1).sort(_idasc)
+Rendered articles/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 51ms (Views: 43.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Oct 24 20:42:45 -0200 2011
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Oct 24 20:42:45 -0200 2011
+Served asset /articles.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Oct 24 20:42:45 -0200 2011
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Oct 24 20:42:45 -0200 2011
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Oct 24 20:42:45 -0200 2011
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Oct 24 20:42:45 -0200 2011
+Served asset /articles.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Oct 24 20:42:45 -0200 2011
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at Mon Oct 24 20:43:23 -0200 2011
+  Processing by ArticlesController#index as HTML
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({})
+Rendered articles/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 24ms (Views: 23.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at Mon Oct 24 20:45:00 -0200 2011
+  Processing by ArticlesController#index as HTML
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({})
+Rendered articles/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Oct 24 20:45:00 -0200 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Oct 24 20:45:00 -0200 2011
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Oct 24 20:45:00 -0200 2011
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Oct 24 20:45:00 -0200 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Oct 24 20:45:00 -0200 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Oct 24 20:45:00 -0200 2011
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Oct 24 20:45:00 -0200 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at Mon Oct 24 20:45:02 -0200 2011
+  Processing by ArticlesController#index as HTML
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({})
+Rendered articles/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 24ms (Views: 23.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Oct 24 20:45:03 -0200 2011
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Oct 24 20:45:03 -0200 2011
+Served asset /articles.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Oct 24 20:45:03 -0200 2011
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Oct 24 20:45:03 -0200 2011
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Oct 24 20:45:03 -0200 2011
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Oct 24 20:45:03 -0200 2011
+Served asset /articles.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Oct 24 20:45:03 -0200 2011
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at Mon Oct 24 20:45:32 -0200 2011
+  Processing by ArticlesController#index as HTML
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({})
+Rendered articles/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 25ms (Views: 24.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Oct 24 20:45:32 -0200 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Oct 24 20:45:32 -0200 2011
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Oct 24 20:45:33 -0200 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Oct 24 20:45:33 -0200 2011
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Oct 24 20:45:33 -0200 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Oct 24 20:45:33 -0200 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Oct 24 20:45:33 -0200 2011
+Served asset /articles.js - 304 Not Modified (0ms)
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1}).limit(-1)
+
+
+Started GET "/articles" for 127.0.0.1 at Mon Oct 24 20:46:56 -0200 2011
+  Processing by ArticlesController#index as HTML
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({})
+Rendered articles/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 59ms (Views: 58.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Oct 24 20:46:57 -0200 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Oct 24 20:46:57 -0200 2011
+Served asset /articles.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Oct 24 20:46:57 -0200 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Oct 24 20:46:57 -0200 2011
+Served asset /articles.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Oct 24 20:46:57 -0200 2011
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Oct 24 20:46:57 -0200 2011
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Oct 24 20:46:57 -0200 2011
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/articles/4ea5e85f99b1981357000002/edit" for 127.0.0.1 at Mon Oct 24 20:46:59 -0200 2011
+  Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"4ea5e85f99b1981357000002"}
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({:_id=>BSON::ObjectId('4ea5e85f99b1981357000002')}).limit(-1).sort(_idasc)
+Rendered articles/_form.html.erb (11.7ms)
+Rendered articles/edit.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 52ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Oct 24 20:46:59 -0200 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Oct 24 20:46:59 -0200 2011
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Oct 24 20:46:59 -0200 2011
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Oct 24 20:46:59 -0200 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Oct 24 20:46:59 -0200 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Oct 24 20:46:59 -0200 2011
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Oct 24 20:46:59 -0200 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started PUT "/articles/4ea5e85f99b1981357000002" for 127.0.0.1 at Mon Oct 24 20:47:02 -0200 2011
+  Processing by ArticlesController#update as HTML
+  Parameters: {"article"=>{"name"=>"Teste", "published_on(1i)"=>"2011", "published_on(2i)"=>"10", "published_on(3i)"=>"24", "content"=>"Testando"}, "commit"=>"Update Article", "authenticity_token"=>"blwjVAfkcVkc7vFdZyFPwY9eiExxWTavTRgTfUSZkHk=", "utf8"=>"✓", "id"=>"4ea5e85f99b1981357000002"}
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({:_id=>BSON::ObjectId('4ea5e85f99b1981357000002')}).limit(-1).sort(_idasc)
+Redirected to http://0.0.0.0:3000/articles/4ea5e85f99b1981357000002
+Completed 302 Found in 6ms
+
+
+Started GET "/articles/4ea5e85f99b1981357000002" for 127.0.0.1 at Mon Oct 24 20:47:02 -0200 2011
+  Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4ea5e85f99b1981357000002"}
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({:_id=>BSON::ObjectId('4ea5e85f99b1981357000002')}).limit(-1).sort(_idasc)
+Rendered articles/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 23ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Oct 24 20:47:02 -0200 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Oct 24 20:47:02 -0200 2011
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Oct 24 20:47:02 -0200 2011
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Oct 24 20:47:02 -0200 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Oct 24 20:47:02 -0200 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Oct 24 20:47:02 -0200 2011
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Oct 24 20:47:02 -0200 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/articles/4ea5e85f99b1981357000002" for 127.0.0.1 at Mon Oct 24 20:48:57 -0200 2011
+  Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4ea5e85f99b1981357000002"}
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({:_id=>BSON::ObjectId('4ea5e85f99b1981357000002')}).limit(-1).sort(_idasc)
+Rendered articles/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 21ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Oct 24 20:48:57 -0200 2011
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Oct 24 20:48:57 -0200 2011
+Served asset /articles.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Oct 24 20:48:57 -0200 2011
+Served asset /scaffolds.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Oct 24 20:48:57 -0200 2011
+Served asset /jquery.js - 200 OK (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Oct 24 20:48:57 -0200 2011
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Oct 24 20:48:57 -0200 2011
+Served asset /articles.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Oct 24 20:48:57 -0200 2011
+Served asset /jquery_ujs.js - 200 OK (1ms)
+
+
+Started GET "/articles/4ea5e85f99b1981357000002/edit" for 127.0.0.1 at Mon Oct 24 20:48:59 -0200 2011
+  Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"4ea5e85f99b1981357000002"}
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({:_id=>BSON::ObjectId('4ea5e85f99b1981357000002')}).limit(-1).sort(_idasc)
+Rendered articles/_form.html.erb (23.0ms)
+Rendered articles/edit.html.erb within layouts/application (27.7ms)
+Completed 200 OK in 72ms (Views: 64.6ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/articles/4ea5e85f99b1981357000002" for 127.0.0.1 at Mon Oct 24 20:49:02 -0200 2011
+  Processing by ArticlesController#update as HTML
+  Parameters: {"article"=>{"name"=>"Teste", "published_on(1i)"=>"2011", "published_on(2i)"=>"10", "published_on(3i)"=>"24", "content"=>"Testando", "other"=>"teste"}, "commit"=>"Update Article", "authenticity_token"=>"blwjVAfkcVkc7vFdZyFPwY9eiExxWTavTRgTfUSZkHk=", "utf8"=>"✓", "id"=>"4ea5e85f99b1981357000002"}
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({:_id=>BSON::ObjectId('4ea5e85f99b1981357000002')}).limit(-1).sort(_idasc)
+Redirected to http://0.0.0.0:3000/articles/4ea5e85f99b1981357000002
+Completed 302 Found in 86ms
+
+
+Started GET "/articles/4ea5e85f99b1981357000002" for 127.0.0.1 at Mon Oct 24 20:49:02 -0200 2011
+  Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4ea5e85f99b1981357000002"}
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({:_id=>BSON::ObjectId('4ea5e85f99b1981357000002')}).limit(-1).sort(_idasc)
+Rendered articles/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 21ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/4ea5e85f99b1981357000002" for 127.0.0.1 at Mon Oct 24 20:50:14 -0200 2011
+  Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4ea5e85f99b1981357000002"}
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({:_id=>BSON::ObjectId('4ea5e85f99b1981357000002')}).limit(-1).sort(_idasc)
+Rendered articles/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 52ms (Views: 44.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Oct 24 20:50:14 -0200 2011
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Oct 24 20:50:14 -0200 2011
+Served asset /articles.css - 200 OK (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Oct 24 20:50:14 -0200 2011
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Oct 24 20:50:14 -0200 2011
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Oct 24 20:50:14 -0200 2011
+Served asset /articles.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Oct 24 20:50:14 -0200 2011
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Oct 24 20:50:14 -0200 2011
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at Mon Oct 24 20:50:16 -0200 2011
+  Processing by ArticlesController#index as HTML
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({})
+Rendered articles/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 36ms (Views: 34.5ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/articles/4ea5e94599b1981357000004" for 127.0.0.1 at Mon Oct 24 20:50:24 -0200 2011
+  Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"blwjVAfkcVkc7vFdZyFPwY9eiExxWTavTRgTfUSZkHk=", "id"=>"4ea5e94599b1981357000004"}
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({:_id=>BSON::ObjectId('4ea5e94599b1981357000004')}).limit(-1).sort(_idasc)
+Redirected to http://0.0.0.0:3000/articles
+Completed 302 Found in 5ms
+
+
+Started GET "/articles" for 127.0.0.1 at Mon Oct 24 20:50:24 -0200 2011
+  Processing by ArticlesController#index as HTML
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({})
+Rendered articles/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at Mon Oct 24 20:51:49 -0200 2011
+  Processing by ArticlesController#new as HTML
+Rendered articles/_form.html.erb (5.0ms)
+Rendered articles/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 32ms (Views: 29.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at Mon Oct 24 20:51:53 -0200 2011
+  Processing by ArticlesController#create as HTML
+  Parameters: {"article"=>{"name"=>"", "content"=>"teste", "other"=>"teste"}, "commit"=>"Create Article", "authenticity_token"=>"blwjVAfkcVkc7vFdZyFPwY9eiExxWTavTRgTfUSZkHk=", "utf8"=>"✓"}
+Rendered articles/_form.html.erb (4.6ms)
+Rendered articles/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 39ms (Views: 36.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at Mon Oct 24 20:51:58 -0200 2011
+  Processing by ArticlesController#create as HTML
+  Parameters: {"article"=>{"name"=>"teste", "content"=>"teste", "other"=>"teste"}, "commit"=>"Create Article", "authenticity_token"=>"blwjVAfkcVkc7vFdZyFPwY9eiExxWTavTRgTfUSZkHk=", "utf8"=>"✓"}
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+Redirected to http://0.0.0.0:3000/articles/4ea5ec0f99b1987dd0000003
+Completed 302 Found in 5ms
+
+
+Started GET "/articles/4ea5ec0f99b1987dd0000003" for 127.0.0.1 at Mon Oct 24 20:51:59 -0200 2011
+  Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4ea5ec0f99b1987dd0000003"}
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({:_id=>BSON::ObjectId('4ea5ec0f99b1987dd0000003')}).limit(-1).sort(_idasc)
+Rendered articles/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 21ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at Mon Oct 24 20:52:00 -0200 2011
+  Processing by ArticlesController#index as HTML
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({})
+Rendered articles/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.0ms)
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1}).limit(-1)
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1}).limit(-1)
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1}).limit(-1)
+
+
+Started GET "/articles" for 127.0.0.1 at Mon Oct 24 22:12:42 -0200 2011
+  Processing by ArticlesController#index as HTML
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({})
+Rendered articles/index.html.erb within layouts/application (224.2ms)
+Compiled application.css  (12ms)  (pid 20071)
+Compiled comments.css  (15ms)  (pid 20071)
+Compiled application.js  (21ms)  (pid 20071)
+Compiled comments.js  (731ms)  (pid 20071)
+Completed 200 OK in 1443ms (Views: 1441.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at Mon Oct 24 22:12:44 -0200 2011
+Served asset /comments.css - 200 OK (4ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at Mon Oct 24 22:12:44 -0200 2011
+Served asset /comments.js - 200 OK (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Oct 24 22:12:44 -0200 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Oct 24 22:12:44 -0200 2011
+Served asset /articles.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Oct 24 22:12:44 -0200 2011
+Served asset /jquery.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Oct 24 22:12:44 -0200 2011
+Served asset /scaffolds.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Oct 24 22:12:44 -0200 2011
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Oct 24 22:12:44 -0200 2011
+Served asset /articles.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Oct 24 22:12:44 -0200 2011
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/articles/4ea5e85f99b1981357000002" for 127.0.0.1 at Mon Oct 24 22:12:46 -0200 2011
+  Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4ea5e85f99b1981357000002"}
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({:_id=>BSON::ObjectId('4ea5e85f99b1981357000002')}).limit(-1).sort(_idasc)
+Rendered articles/show.html.erb within layouts/application (33.3ms)
+Completed 200 OK in 111ms (Views: 53.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Oct 24 22:12:47 -0200 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Oct 24 22:12:47 -0200 2011
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Oct 24 22:12:47 -0200 2011
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Oct 24 22:12:47 -0200 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Oct 24 22:12:47 -0200 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Oct 24 22:12:47 -0200 2011
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/articles/4ea5e85f99b1981357000002/edit" for 127.0.0.1 at Mon Oct 24 22:12:51 -0200 2011
+  Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"4ea5e85f99b1981357000002"}
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({:_id=>BSON::ObjectId('4ea5e85f99b1981357000002')}).limit(-1).sort(_idasc)
+Rendered articles/_form.html.erb (5.9ms)
+Rendered articles/edit.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 66ms (Views: 63.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Oct 24 22:12:52 -0200 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Oct 24 22:12:52 -0200 2011
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Oct 24 22:12:52 -0200 2011
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Oct 24 22:12:52 -0200 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Oct 24 22:12:52 -0200 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Oct 24 22:12:52 -0200 2011
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at Mon Oct 24 22:12:53 -0200 2011
+  Processing by ArticlesController#index as HTML
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({})
+Rendered articles/index.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 48ms (Views: 45.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Oct 24 22:12:53 -0200 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Oct 24 22:12:54 -0200 2011
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Oct 24 22:12:54 -0200 2011
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Oct 24 22:12:54 -0200 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Oct 24 22:12:54 -0200 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Oct 24 22:12:54 -0200 2011
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/articles/4ea5e85f99b1981357000002" for 127.0.0.1 at Mon Oct 24 22:12:55 -0200 2011
+  Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4ea5e85f99b1981357000002"}
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({:_id=>BSON::ObjectId('4ea5e85f99b1981357000002')}).limit(-1).sort(_idasc)
+Rendered articles/show.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 44ms (Views: 36.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Oct 24 22:12:55 -0200 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Oct 24 22:12:55 -0200 2011
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Oct 24 22:12:55 -0200 2011
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Oct 24 22:12:55 -0200 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Oct 24 22:12:55 -0200 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Oct 24 22:12:55 -0200 2011
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started POST "/articles/4ea5e85f99b1981357000002/comments" for 127.0.0.1 at Mon Oct 24 22:13:05 -0200 2011
+  Processing by CommentsController#create as HTML
+  Parameters: {"comment"=>{"name"=>"Teste", "content"=>"Comentario teste"}, "commit"=>"Create Comment", "authenticity_token"=>"blwjVAfkcVkc7vFdZyFPwY9eiExxWTavTRgTfUSZkHk=", "utf8"=>"✓", "article_id"=>"4ea5e85f99b1981357000002"}
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({:_id=>BSON::ObjectId('4ea5e85f99b1981357000002')}).limit(-1).sort(_idasc)
+Redirected to http://0.0.0.0:3000/articles/4ea5e85f99b1981357000002
+Completed 302 Found in 23ms
+
+
+Started GET "/articles/4ea5e85f99b1981357000002" for 127.0.0.1 at Mon Oct 24 22:13:05 -0200 2011
+  Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4ea5e85f99b1981357000002"}
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({:_id=>BSON::ObjectId('4ea5e85f99b1981357000002')}).limit(-1).sort(_idasc)
+Rendered articles/show.html.erb within layouts/application (19.3ms)
+Completed 200 OK in 40ms (Views: 37.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Oct 24 22:13:05 -0200 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Oct 24 22:13:05 -0200 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Oct 24 22:13:05 -0200 2011
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Oct 24 22:13:05 -0200 2011
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Oct 24 22:13:05 -0200 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Oct 24 22:13:05 -0200 2011
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started POST "/articles/4ea5e85f99b1981357000002/comments" for 127.0.0.1 at Mon Oct 24 22:15:13 -0200 2011
+  Processing by CommentsController#create as HTML
+  Parameters: {"comment"=>{"name"=>"teste", "content"=>"teste 2"}, "commit"=>"Create Comment", "authenticity_token"=>"blwjVAfkcVkc7vFdZyFPwY9eiExxWTavTRgTfUSZkHk=", "utf8"=>"✓", "article_id"=>"4ea5e85f99b1981357000002"}
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({:_id=>BSON::ObjectId('4ea5e85f99b1981357000002')}).limit(-1).sort(_idasc)
+Redirected to http://0.0.0.0:3000/articles/4ea5e85f99b1981357000002
+Completed 302 Found in 30ms
+
+
+Started GET "/articles/4ea5e85f99b1981357000002" for 127.0.0.1 at Mon Oct 24 22:15:14 -0200 2011
+  Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4ea5e85f99b1981357000002"}
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({:_id=>BSON::ObjectId('4ea5e85f99b1981357000002')}).limit(-1).sort(_idasc)
+Rendered articles/show.html.erb within layouts/application (143.3ms)
+Completed 200 OK in 164ms (Views: 160.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Oct 24 22:15:14 -0200 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Oct 24 22:15:14 -0200 2011
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Oct 24 22:15:14 -0200 2011
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Oct 24 22:15:14 -0200 2011
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Oct 24 22:15:14 -0200 2011
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Oct 24 22:15:14 -0200 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1}).limit(-1)
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1}).limit(-1)
+
+
+Started GET "/authors" for 127.0.0.1 at Mon Oct 24 22:23:12 -0200 2011
+  Processing by AuthorsController#index as HTML
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['$cmd'].find(#<BSON::OrderedHash:0x535e4cc {"create"=>"authors"}>).limit(-1)
+MONGODB blog_mongodb_development['authors'].find({})
+Rendered authors/index.html.erb within layouts/application (83.9ms)
+Compiled application.css  (8ms)  (pid 13809)
+Compiled authors.css  (3ms)  (pid 13809)
+Compiled application.js  (11ms)  (pid 13809)
+Compiled authors.js  (216ms)  (pid 13809)
+Completed 200 OK in 528ms (Views: 527.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Oct 24 22:23:13 -0200 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/authors.css?body=1" for 127.0.0.1 at Mon Oct 24 22:23:13 -0200 2011
+Served asset /authors.css - 200 OK (2ms)
+
+
+Started GET "/assets/authors.js?body=1" for 127.0.0.1 at Mon Oct 24 22:23:13 -0200 2011
+Served asset /authors.js - 200 OK (7ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Oct 24 22:23:13 -0200 2011
+Served asset /scaffolds.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at Mon Oct 24 22:23:13 -0200 2011
+Served asset /comments.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Oct 24 22:23:13 -0200 2011
+Served asset /articles.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Oct 24 22:23:13 -0200 2011
+Served asset /jquery.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Oct 24 22:23:13 -0200 2011
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Oct 24 22:23:13 -0200 2011
+Served asset /articles.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at Mon Oct 24 22:23:13 -0200 2011
+Served asset /comments.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Oct 24 22:23:13 -0200 2011
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/authors/new" for 127.0.0.1 at Mon Oct 24 22:23:15 -0200 2011
+  Processing by AuthorsController#new as HTML
+Rendered authors/_form.html.erb (3.7ms)
+Rendered authors/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 28ms (Views: 26.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Oct 24 22:23:15 -0200 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Oct 24 22:23:15 -0200 2011
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at Mon Oct 24 22:23:15 -0200 2011
+Served asset /comments.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Oct 24 22:23:15 -0200 2011
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Oct 24 22:23:15 -0200 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Oct 24 22:23:15 -0200 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Oct 24 22:23:15 -0200 2011
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at Mon Oct 24 22:23:15 -0200 2011
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started POST "/authors" for 127.0.0.1 at Mon Oct 24 22:23:20 -0200 2011
+  Processing by AuthorsController#create as HTML
+  Parameters: {"commit"=>"Create Author", "author"=>{"name"=>"Ricardo Pontes"}, "authenticity_token"=>"blwjVAfkcVkc7vFdZyFPwY9eiExxWTavTRgTfUSZkHk=", "utf8"=>"✓"}
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+Redirected to http://0.0.0.0:3000/authors/ricardo-pontes
+Completed 302 Found in 195ms
+
+
+Started GET "/authors/ricardo-pontes" for 127.0.0.1 at Mon Oct 24 22:23:20 -0200 2011
+  Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"ricardo-pontes"}
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['authors'].find({:_id=>"ricardo-pontes"}).limit(-1).sort(_idasc)
+Rendered authors/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 31ms (Views: 27.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Oct 24 22:23:20 -0200 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Oct 24 22:23:20 -0200 2011
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at Mon Oct 24 22:23:20 -0200 2011
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Oct 24 22:23:20 -0200 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Oct 24 22:23:20 -0200 2011
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Oct 24 22:23:20 -0200 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Oct 24 22:23:20 -0200 2011
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at Mon Oct 24 22:23:20 -0200 2011
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/authors" for 127.0.0.1 at Mon Oct 24 22:23:21 -0200 2011
+  Processing by AuthorsController#index as HTML
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['authors'].find({})
+Rendered authors/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 29ms (Views: 27.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Oct 24 22:23:21 -0200 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Oct 24 22:23:21 -0200 2011
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at Mon Oct 24 22:23:21 -0200 2011
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Oct 24 22:23:21 -0200 2011
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Oct 24 22:23:21 -0200 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Oct 24 22:23:21 -0200 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Oct 24 22:23:21 -0200 2011
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at Mon Oct 24 22:23:21 -0200 2011
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/authors/ricardo-pontes" for 127.0.0.1 at Mon Oct 24 22:23:41 -0200 2011
+  Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"ricardo-pontes"}
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['authors'].find({:_id=>"ricardo-pontes"}).limit(-1).sort(_idasc)
+Rendered authors/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 141ms (Views: 138.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Oct 24 22:23:41 -0200 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Oct 24 22:23:41 -0200 2011
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/authors.css?body=1" for 127.0.0.1 at Mon Oct 24 22:23:41 -0200 2011
+Served asset /authors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at Mon Oct 24 22:23:41 -0200 2011
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Oct 24 22:23:41 -0200 2011
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Oct 24 22:23:41 -0200 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Oct 24 22:23:41 -0200 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Oct 24 22:23:41 -0200 2011
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/authors.js?body=1" for 127.0.0.1 at Mon Oct 24 22:23:41 -0200 2011
+Served asset /authors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at Mon Oct 24 22:23:41 -0200 2011
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Oct 24 22:23:41 -0200 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/authors" for 127.0.0.1 at Mon Oct 24 22:26:33 -0200 2011
+  Processing by AuthorsController#index as HTML
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['authors'].find({})
+Rendered authors/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 53ms (Views: 50.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Oct 24 22:26:33 -0200 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Oct 24 22:26:33 -0200 2011
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/authors.css?body=1" for 127.0.0.1 at Mon Oct 24 22:26:33 -0200 2011
+Served asset /authors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at Mon Oct 24 22:26:33 -0200 2011
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Oct 24 22:26:33 -0200 2011
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Oct 24 22:26:33 -0200 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Oct 24 22:26:33 -0200 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Oct 24 22:26:33 -0200 2011
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/authors.js?body=1" for 127.0.0.1 at Mon Oct 24 22:26:33 -0200 2011
+Served asset /authors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at Mon Oct 24 22:26:33 -0200 2011
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Oct 24 22:26:33 -0200 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at Mon Oct 24 22:26:38 -0200 2011
+  Processing by ArticlesController#index as HTML
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({})
+Rendered articles/index.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 56ms (Views: 54.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Oct 24 22:26:38 -0200 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Oct 24 22:26:38 -0200 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Oct 24 22:26:38 -0200 2011
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/authors.css?body=1" for 127.0.0.1 at Mon Oct 24 22:26:38 -0200 2011
+Served asset /authors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at Mon Oct 24 22:26:38 -0200 2011
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Oct 24 22:26:38 -0200 2011
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Oct 24 22:26:38 -0200 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Oct 24 22:26:38 -0200 2011
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/authors.js?body=1" for 127.0.0.1 at Mon Oct 24 22:26:38 -0200 2011
+Served asset /authors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at Mon Oct 24 22:26:38 -0200 2011
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Oct 24 22:26:38 -0200 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/articles/4ea5ec0f99b1987dd0000003" for 127.0.0.1 at Mon Oct 24 22:26:40 -0200 2011
+  Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4ea5ec0f99b1987dd0000003"}
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({:_id=>BSON::ObjectId('4ea5ec0f99b1987dd0000003')}).limit(-1).sort(_idasc)
+Rendered articles/show.html.erb within layouts/application (36.7ms)
+Completed 200 OK in 73ms (Views: 65.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Oct 24 22:26:40 -0200 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Oct 24 22:26:40 -0200 2011
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/authors.css?body=1" for 127.0.0.1 at Mon Oct 24 22:26:40 -0200 2011
+Served asset /authors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at Mon Oct 24 22:26:40 -0200 2011
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Oct 24 22:26:40 -0200 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Oct 24 22:26:40 -0200 2011
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Oct 24 22:26:40 -0200 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Oct 24 22:26:40 -0200 2011
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/authors.js?body=1" for 127.0.0.1 at Mon Oct 24 22:26:40 -0200 2011
+Served asset /authors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at Mon Oct 24 22:26:40 -0200 2011
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Oct 24 22:26:40 -0200 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/articles/4ea5ec0f99b1987dd0000003/edit" for 127.0.0.1 at Mon Oct 24 22:26:43 -0200 2011
+  Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"4ea5ec0f99b1987dd0000003"}
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({:_id=>BSON::ObjectId('4ea5ec0f99b1987dd0000003')}).limit(-1).sort(_idasc)
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['authors'].find({})
+Rendered articles/_form.html.erb (26.3ms)
+Rendered articles/edit.html.erb within layouts/application (29.0ms)
+Completed 200 OK in 176ms (Views: 172.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Oct 24 22:26:43 -0200 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at Mon Oct 24 22:26:43 -0200 2011
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Oct 24 22:26:43 -0200 2011
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Oct 24 22:26:43 -0200 2011
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/authors.css?body=1" for 127.0.0.1 at Mon Oct 24 22:26:43 -0200 2011
+Served asset /authors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Oct 24 22:26:43 -0200 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Oct 24 22:26:43 -0200 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Oct 24 22:26:43 -0200 2011
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/authors.js?body=1" for 127.0.0.1 at Mon Oct 24 22:26:43 -0200 2011
+Served asset /authors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at Mon Oct 24 22:26:43 -0200 2011
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Oct 24 22:26:43 -0200 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started PUT "/articles/4ea5ec0f99b1987dd0000003" for 127.0.0.1 at Mon Oct 24 22:26:47 -0200 2011
+  Processing by ArticlesController#update as HTML
+  Parameters: {"article"=>{"name"=>"teste", "content"=>"teste", "other"=>"teste", "author_id"=>"ricardo-pontes"}, "commit"=>"Update Article", "authenticity_token"=>"blwjVAfkcVkc7vFdZyFPwY9eiExxWTavTRgTfUSZkHk=", "utf8"=>"✓", "id"=>"4ea5ec0f99b1987dd0000003"}
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({:_id=>BSON::ObjectId('4ea5ec0f99b1987dd0000003')}).limit(-1).sort(_idasc)
+Redirected to http://0.0.0.0:3000/articles/4ea5ec0f99b1987dd0000003
+Completed 302 Found in 21ms
+
+
+Started GET "/articles/4ea5ec0f99b1987dd0000003" for 127.0.0.1 at Mon Oct 24 22:26:47 -0200 2011
+  Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4ea5ec0f99b1987dd0000003"}
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({:_id=>BSON::ObjectId('4ea5ec0f99b1987dd0000003')}).limit(-1).sort(_idasc)
+Rendered articles/show.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 168ms (Views: 164.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Oct 24 22:26:47 -0200 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Oct 24 22:26:47 -0200 2011
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/authors.css?body=1" for 127.0.0.1 at Mon Oct 24 22:26:47 -0200 2011
+Served asset /authors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at Mon Oct 24 22:26:47 -0200 2011
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Oct 24 22:26:47 -0200 2011
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Oct 24 22:26:47 -0200 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Oct 24 22:26:47 -0200 2011
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Oct 24 22:26:47 -0200 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/authors.js?body=1" for 127.0.0.1 at Mon Oct 24 22:26:47 -0200 2011
+Served asset /authors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Oct 24 22:26:47 -0200 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at Mon Oct 24 22:26:47 -0200 2011
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/articles/" for 127.0.0.1 at Mon Oct 24 22:26:53 -0200 2011
+  Processing by ArticlesController#index as HTML
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({})
+Rendered articles/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 26ms (Views: 25.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Oct 24 22:26:54 -0200 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Oct 24 22:26:54 -0200 2011
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/authors.css?body=1" for 127.0.0.1 at Mon Oct 24 22:26:54 -0200 2011
+Served asset /authors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at Mon Oct 24 22:26:54 -0200 2011
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Oct 24 22:26:54 -0200 2011
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Oct 24 22:26:54 -0200 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Oct 24 22:26:54 -0200 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Oct 24 22:26:54 -0200 2011
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/authors.js?body=1" for 127.0.0.1 at Mon Oct 24 22:26:54 -0200 2011
+Served asset /authors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at Mon Oct 24 22:26:54 -0200 2011
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Oct 24 22:26:54 -0200 2011
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/articles/4ea5e85f99b1981357000002" for 127.0.0.1 at Mon Oct 24 22:26:56 -0200 2011
+  Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4ea5e85f99b1981357000002"}
+MONGODB blog_mongodb_development['system.namespaces'].find({})
+MONGODB blog_mongodb_development['articles'].find({:_id=>BSON::ObjectId('4ea5e85f99b1981357000002')}).limit(-1).sort(_idasc)
+Rendered articles/show.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 41ms (Views: 37.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Oct 24 22:26:57 -0200 2011
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at Mon Oct 24 22:26:57 -0200 2011
+Served asset /articles.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/authors.css?body=1" for 127.0.0.1 at Mon Oct 24 22:26:57 -0200 2011
+Served asset /authors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Oct 24 22:26:57 -0200 2011
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at Mon Oct 24 22:26:57 -0200 2011
+Served asset /comments.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Oct 24 22:26:57 -0200 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Oct 24 22:26:57 -0200 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at Mon Oct 24 22:26:57 -0200 2011
+Served asset /articles.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/authors.js?body=1" for 127.0.0.1 at Mon Oct 24 22:26:57 -0200 2011
+Served asset /authors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at Mon Oct 24 22:26:57 -0200 2011
+Served asset /comments.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Oct 24 22:26:57 -0200 2011
+Served asset /application.js - 304 Not Modified (0ms)
